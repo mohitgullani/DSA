@@ -138,6 +138,34 @@ class Patterns{
         }
     }
 
+    public static void printPattern13(int n){
+        int count = 1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(count++ + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern14(int n){
+        for(int i=0;i<n;i++){
+            for(char ch='A';ch<='A'+i;ch++){
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern15(int n){
+        for(int i=n-1;i>=0;i--){
+            for(char ch='A';ch<='A'+i;ch++){
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int n = 5;
         System.out.println("---------- Pattern 1 ----------");
@@ -164,5 +192,11 @@ class Patterns{
         printPattern11(n);
         System.out.println("---------- Pattern 12 ----------");
         printPattern12(n);
+        System.out.println("---------- Pattern 13 ----------");
+        printPattern13(n);
+        System.out.println("---------- Pattern 14 ----------");
+        printPattern14(n);
+        System.out.println("---------- Pattern 15 ----------");
+        printPattern15(n);
     }
 }
