@@ -238,6 +238,65 @@ class Patterns{
         }
     }
 
+    public static void printPattern20(int n){
+        for(int i=0;i<n;i++){
+            // Stars
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            // Spaces
+            for(int j=0;j<2*(n-i-1);j++){
+                System.out.print("  ");
+            }
+            // Stars
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=n-2;i>=0;i--){
+            // Stars
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            // Spaces
+            for(int j=0;j<2*(n-i-1);j++){
+                System.out.print("  ");
+            }
+            // Stars
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern21(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(i == 0 || j == 0 || i == n-1 || j == n-1){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    
+    public static void printPattern22(int n){
+        for(int i=0;i<2*n-1;i++){
+            for(int j=0;j<2*n-1;j++){
+                int top = i;
+                int left = j;
+                int right = (2*n - 2) - j;
+                int bottom = (2*n - 2) - i;
+                System.out.print(n - Math.min(Math.min(top, left), Math.min(right, bottom)) + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int n = 5;
         System.out.println("---------- Pattern 1 ----------");
@@ -278,5 +337,11 @@ class Patterns{
         printPattern18(n);
         System.out.println("---------- Pattern 19 ----------");
         printPattern19(n);
+        System.out.println("---------- Pattern 20 ----------");
+        printPattern20(n);
+        System.out.println("---------- Pattern 21 ----------");
+        printPattern21(n);
+        System.out.println("---------- Pattern 22 ----------");
+        printPattern22(n);
     }
 }
