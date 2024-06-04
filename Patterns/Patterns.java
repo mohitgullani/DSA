@@ -69,6 +69,44 @@ class Patterns{
         }
     }
 
+    public static void printPattern8(int n){
+        for(int i=0;i<n;i++){
+            // Spaces
+            for(int j=0;j<i;j++){
+                System.out.print("  ");
+            }
+            // Stars
+            for(int j=0;j<2*(n-i) - 1;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printPattern9(int n){
+        // Upper Part
+        printPattern7(n);
+        // Lower Part
+        printPattern8(n);
+    }
+
+    public static void printPattern10(int n){
+        // Upper Part
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        // Lower Part
+        for(int i=n-1;i>0;i--){
+            for(int j=0;j<i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int n = 5;
         System.out.println("---------- Pattern 1 ----------");
@@ -85,5 +123,11 @@ class Patterns{
         printPattern6(n);
         System.out.println("---------- Pattern 7 ----------");
         printPattern7(n);
+        System.out.println("---------- Pattern 8 ----------");
+        printPattern8(n);
+        System.out.println("---------- Pattern 9 ----------");
+        printPattern9(n);
+        System.out.println("---------- Pattern 10 ----------");
+        printPattern10(n);
     }
 }
