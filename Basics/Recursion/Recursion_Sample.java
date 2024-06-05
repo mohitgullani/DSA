@@ -1,14 +1,16 @@
 public class Recursion_Sample{
-    static int count = 0;
-    public static void f(){
-        if(count == 5){
+    // Time Complexity -> O(N)
+    // Space Complexity (Stack Space) -> O(N)
+    public static void printName(String name, int n){
+        if(n == 0){
             return;
         }
-        System.out.println("Hello Mohit!");
-        count++;
-        f();
+        System.out.println(name);
+        printName(name, n - 1);
     }
     public static void main(String[] args) {
-        f();
+        int n = 5;
+        String name = "Mohit Gullani!";
+        printName(name, n);
     }
 }
