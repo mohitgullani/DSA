@@ -1,6 +1,13 @@
 import java.util.*;
 
 class Patterns{
+    /* Pattern 1
+                * * * * *
+                * * * * *
+                * * * * *
+                * * * * *
+                * * * * *
+    */
     public static void printPattern1(int n){
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -10,6 +17,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 2
+                *
+                * *
+                * * *
+                * * * *
+                * * * * *
+    */
     public static void printPattern2(int n){
         for(int i=0;i<n;i++){
             for(int j=0;j<=i;j++){
@@ -19,6 +33,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 3
+                1 
+                1 2
+                1 2 3
+                1 2 3 4
+                1 2 3 4 5
+     */
     public static void printPattern3(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
@@ -28,6 +49,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 4
+                1
+                2 2
+                3 3 3
+                4 4 4 4
+                5 5 5 5 5
+     */
     public static void printPattern4(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
@@ -37,6 +65,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 5
+                * * * * * 
+                * * * *
+                * * *
+                * *
+                *
+     */
     public static void printPattern5(int n){
         for(int i=n;i>=1;i--){
             for(int j=1;j<=i;j++){
@@ -46,6 +81,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 6 
+                1 2 3 4 5
+                1 2 3 4
+                1 2 3 
+                1 2
+                1
+    */
     public static void printPattern6(int n){
         for(int i=n;i>=1;i--){
             for(int j=1;j<=i;j++){
@@ -55,6 +97,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 7
+                        *
+                      * * *
+                    * * * * *
+                  * * * * * * *
+                * * * * * * * * *
+     */
     public static void printPattern7(int n){
         for(int i=0;i<n;i++){
             // Spaces
@@ -69,6 +118,13 @@ class Patterns{
         }
     }
 
+    /*  Pattern 8
+                * * * * * * * * *
+                  * * * * * * *
+                    * * * * * 
+                      * * *
+                        *
+     */
     public static void printPattern8(int n){
         for(int i=0;i<n;i++){
             // Spaces
@@ -83,6 +139,18 @@ class Patterns{
         }
     }
 
+    /* Pattern 9
+                        *
+                      * * *
+                    * * * * *
+                  * * * * * * *
+                * * * * * * * * *
+                * * * * * * * * *
+                  * * * * * * * 
+                    * * * * *
+                      * * *
+                        *
+     */
     public static void printPattern9(int n){
         // Upper Part
         printPattern7(n);
@@ -90,6 +158,17 @@ class Patterns{
         printPattern8(n);
     }
 
+    /* Pattern 10
+                *
+                * *
+                * * *
+                * * * *
+                * * * * *
+                * * * *
+                * * *
+                * *
+                *
+     */
     public static void printPattern10(int n){
         // Upper Part
         for(int i=0;i<n;i++){
@@ -107,6 +186,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 11
+                1
+                0 1
+                1 0 1
+                0 1 0 1
+                1 0 1 0 1 
+     */
     public static void printPattern11(int n){
         int start = 1;
         for(int i=0;i<n;i++){
@@ -120,6 +206,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 12
+                1                 1
+                1 2             2 1
+                1 2 3         3 2 1
+                1 2 3 4     4 3 2 1
+                1 2 3 4 5 5 4 3 2 1
+     */
     public static void printPattern12(int n){
         for(int i=1;i<=n;i++){
             // Numbers
@@ -138,6 +231,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 13
+                1
+                2 3
+                4 5 6
+                7 8 9 10
+                11 12 13 14 15
+     */
     public static void printPattern13(int n){
         int count = 1;
         for(int i=0;i<n;i++){
@@ -148,6 +248,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 14
+                A
+                A B
+                A B C
+                A B C D
+                A B C D E
+     */
     public static void printPattern14(int n){
         for(int i=0;i<n;i++){
             for(char ch='A';ch<='A'+i;ch++){
@@ -157,6 +264,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 15
+                A B C D E
+                A B C D
+                A B C
+                A B
+                A
+     */
     public static void printPattern15(int n){
         for(int i=n-1;i>=0;i--){
             for(char ch='A';ch<='A'+i;ch++){
@@ -166,6 +280,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 16
+                A
+                B B
+                C C C
+                D D D D
+                E E E E E
+     */
     public static void printPattern16(int n){
         for(int i=0;i<n;i++){
             char ch = (char)('A' + i);
@@ -176,6 +297,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 17
+                        A
+                      A B A
+                    A B C B A
+                  A B C D C B A 
+                A B C D E D C B A
+     */
     public static void printPattern17(int n){
         for(int i=0;i<n;i++){
             // Spaces
@@ -193,6 +321,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 18
+                E
+                D E
+                C D E
+                B C D E
+                A B C D E
+     */
     public static void printPattern18(int n){
         for(int i=0;i<n;i++){
             char ch = (char)('E' - i);
@@ -203,6 +338,18 @@ class Patterns{
         }
     }
 
+    /* Pattern 19
+                **********
+                ****  ****
+                ***    ***
+                **      **
+                *        *
+                *        *
+                **      **
+                ***    ***
+                ****  ****
+                **********
+     */
     public static void printPattern19(int n){
         // Upper Part
         for(int i=0;i<n;i++){
@@ -238,6 +385,17 @@ class Patterns{
         }
     }
 
+    /* Pattern 20
+                *                 *
+                * *             * *
+                * * *         * * *
+                * * * *     * * * *
+                * * * * * * * * * *
+                * * * *     * * * * 
+                * * *         * * *
+                * *             * *
+                *                 *
+     */
     public static void printPattern20(int n){
         for(int i=0;i<n;i++){
             // Stars
@@ -271,6 +429,13 @@ class Patterns{
         }
     }
 
+    /* Pattern 21
+                * * * * *
+                *       *
+                *       *
+                *       *
+                * * * * *
+     */
     public static void printPattern21(int n){
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -284,6 +449,17 @@ class Patterns{
         }
     }
     
+    /* Pattern 22
+                5 5 5 5 5 5 5 5 5
+                5 4 4 4 4 4 4 4 5
+                5 4 3 3 3 3 3 4 5
+                5 4 3 2 2 2 3 4 5
+                5 4 3 2 1 2 3 4 5
+                5 4 3 2 2 2 3 4 5
+                5 4 3 3 3 3 3 4 5
+                5 4 4 4 4 4 4 4 5
+                5 5 5 5 5 5 5 5 5
+     */
     public static void printPattern22(int n){
         for(int i=0;i<2*n-1;i++){
             for(int j=0;j<2*n-1;j++){
