@@ -1,4 +1,5 @@
 public class Palindrome {
+    // Time Complexity is O(log10(n)) and SC is O(1)
     public static boolean isPalindrome(int x) {
         int reverse = 0;
         int temp = x;
