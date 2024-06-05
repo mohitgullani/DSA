@@ -44,6 +44,7 @@ public class All_Divisors {
         List<Integer> list1 = divisorsApproach1(36);
         System.out.println(list1);
         List<Integer> list2 = divisorsApproach2(36);
+        Collections.sort(list2);
         System.out.println(list2);
     }
 }
