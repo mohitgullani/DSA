@@ -16,7 +16,7 @@ public class All_Divisors {
     // Time Complexity -> O(Sqrt(N))
     // Space Complexity is O(1) because I am using List to store the divisors, I'm not using to solve the problem
     public static List<Integer> divisorsApproach2(int n){
-        /* For N = 36
+        /* Let's say N = 36
             1 * 36
             2 * 18
             3 * 12
