@@ -28,7 +28,7 @@ public class All_Divisors {
             36 * 1
          */
         List<Integer> list = new ArrayList<>();
-        for(int i=1;i<=Math.sqrt(n);i++){
+        for(int i=1;i*i<=n;i++){
             if(n % i == 0){
                 list.add(i);
 
