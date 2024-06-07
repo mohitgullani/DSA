@@ -9,7 +9,7 @@ public class Bubble_Sort {
     }
 
     // Bubble Sort Algorithm
-    // TC -> nearly O(N^2) in Average and Worst case but in Best Case, TC would be O(N)
+    // TC -> nearly O(N^2) in Average and Worst case but in Best Case, TC would be O(N).
     // SC -> O(1)
     public static void bubbleSort(int[] arr, int n){
         for(int i=n-1;i>=1;i--){
