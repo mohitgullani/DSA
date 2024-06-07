@@ -9,7 +9,7 @@ public class Selection_Sort {
     }
 
     // Selection Sort Algorithm
-    // TC -> nearly O(N^2) in Best, Average and Worst case
+    // TC -> nearly O(N^2) in Best, Average and Worst case.
     // SC -> O(1)
     public static void selectionSort(int[] arr, int n){
         for(int i=0;i<=n-2;i++){
