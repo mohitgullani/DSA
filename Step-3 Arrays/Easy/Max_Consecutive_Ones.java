@@ -1,3 +1,7 @@
+// Problem Link: https://leetcode.com/problems/max-consecutive-ones/
+// Problem Name & Number: 485. Max Consecutive Ones
+// Problem Description: Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
 public class Max_Consecutive_Ones {
     /*
         This is very straight forward question, so no need to think of brute, better or optimal solution
