@@ -1,3 +1,9 @@
+/*
+    Problem Link: https://leetcode.com/problems/missing-number/
+    Problem Name & Number: 268. Missing Number
+    Problem Description: Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+*/
+
 public class Missing_Number {
     /*
         Brute Force Approach
